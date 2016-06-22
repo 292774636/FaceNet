@@ -1,0 +1,18 @@
+net: "model/facenet_train_triplet.prototxt"
+
+#test_iter: 400
+#test_interval: 1000
+#test_initialization: false
+
+display: 5
+#average_loss: 5
+base_lr: 0.01
+lr_policy: "step"
+gamma: 0.5
+stepsize: 50000
+max_iter: 500000
+momentum: 0.9
+weight_decay: 0.0002
+snapshot: 10000
+snapshot_prefix: "output/vgg/triplet_v2/facenet_triplet"
+solver_mode: GPU

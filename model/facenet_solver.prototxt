@@ -1,0 +1,20 @@
+net: "model/facenet_train_val.prototxt"
+
+#test_iter: 500
+#test_interval: 120
+#test_initialization: true
+
+display: 10
+average_loss: 10
+base_lr: 0.0025
+#lr_policy: "poly"
+#power: 0.5
+lr_policy: "step"
+gamma: 0.5
+stepsize: 100000
+max_iter: 500000
+momentum: 0.9
+weight_decay: 0.0002
+snapshot: 20000
+snapshot_prefix: "output/vgg/facenet_200000"
+solver_mode: GPU
